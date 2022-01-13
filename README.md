@@ -1,2 +1,2 @@
 # algofuk
-A page the display the result of an algorithm
+A page to display the result of an algorithm
