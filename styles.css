@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */
+}
+
+body {
+  background-color: #eee;
+}
+
+#search {
+  padding: 0.7rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: rgb(236, 198, 198);
+  cursor: pointer;
+}
+
+#search:hover {
+  background-color: rgb(219, 166, 166);
+}
+
+.container {
+  /* border: 2px solid black; */
+  border-radius: 3rem;
+  width: 80%;
+  /* height: 100vh; */
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 6rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+label {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-basis: 10%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-basis: 40%;
+  gap: 2rem;
+}
+
+#p-important {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.9rem;
+}
+
+#solution,
+#solution-index {
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: rgb(24, 209, 24);
+  color: honeydew;
+  border-radius: 1.5rem;
+  padding: 3px 1rem;
+}
+
+#zero {
+  font-size: 4rem;
+  font-weight: 600;
+  background-color: red;
+  color: honeydew;
+  border-radius: 1.5rem;
+  padding: 3px 1rem;
+}
+
+#array-container,
+#fibonacci-container {
+  text-align: center;
+}
+#array-container > *:first-child {
+  padding: 1rem 2rem;
+  background-color: khaki;
+  border-radius: 3rem;
+}
+
+#fibonacci-container > *:first-child {
+  padding: 1rem 2rem;
+  background-color: khaki;
+  border-radius: 3rem;
+}

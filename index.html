@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ALGOFUK</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Algofuk</h1>
+
+      <div class="card-container">
+        <div class="card">
+          <label for="length"
+            >Enter how many values for the array to contain:</label
+          >
+          <br />
+          <input type="number" id="length" placeholder="Enter a number..." />
+        </div>
+
+        <div class="card">
+          <label for="range"
+            >Enter the range from which values to be selected:</label
+          >
+          <br />
+          <input type="number" id="range" placeholder="Enter a number..."/>
+        </div>
+      </div>
+
+      <button id="search">Search</button>
+
+      <div class="solution-container">
+        <p id="p-important">
+          The highest product of two numbers from the Array which is also a Fibonacci number is
+          <span id="solution">?</span> and it is found at index
+          <span id="solution-index">?</span>.
+        </p>
+
+        <p>
+          Please note that the Array is created with random generated numbers
+          according to your number inputs above, after which it will be purged
+          so that only unique numbers remain. That is why the length of the
+          Array might be smaller than the value chosen by you, as the duplicates
+          were taken away.
+        </p>
+
+        <p>
+          However, if the number is fucking <span id="zero">0</span>, it means
+          that there is no product of any given pair of numbers from the Array
+          which is also a fucking Fibonacci number.
+        </p>
+      </div>
+
+      <div id="array-container">
+        <p>
+          Below will be the dynamically generated working Array after clicking
+          <i>Search</i>:
+        </p>
+        <br />
+        <p id="show-array"></p>
+      </div>
+
+       <div id="fibonacci-container">
+        <p>
+          Below will be the Fibonacci Array (with the Fibonacci number sequence) which will be generated in a manner that its sequence ends after the highest product of two numbers from the Array is contained, after clicking
+          <i>Search</i>:
+        </p>
+        <br />
+        <p id="show-fib"></p>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
