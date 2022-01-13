@@ -54,6 +54,7 @@ function findProd(x, y) {
   var fib_val_max = 0;
   var fib_idx_max = 0;
 
+  //parcurgem toate produsele posibile
   for (var i = 0; i < x; i++) {
     for (var j = i + 1; j < x; j++) {
       //calculam produsul curent
